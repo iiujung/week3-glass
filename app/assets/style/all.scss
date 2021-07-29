@@ -184,6 +184,9 @@
       max-width: 760px;
       .label-grp {
         margin-bottom: 20px;
+        label {
+          margin-bottom: 8px;
+        }
       }
     }
   }
@@ -191,4 +194,118 @@
 
 a:hover {
   color: $hightlight;
+}
+
+// 系列鏡框
+.tab {
+  max-width: 100%;
+  justify-content: center;
+  a {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 8px solid #fff;
+    color: $font-dark;
+    padding: 25px 64px;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #e4e4e4;
+      border-bottom: 8px solid $color-primary;
+    }
+    &:active {
+      border-bottom: 8px solid $color-primary;
+    }
+    img {
+      width: 44px;
+      height: 44px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.tab a.active {
+  border-bottom: 8px solid $color-primary;
+}
+
+// 圖片右邊的空白怎麼解決
+
+.prod-banner {
+  width: 100%;
+  .frame {
+    max-width: 960px;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+// 小商品卡中li最後的mr30 怎麼取消
+
+.product-small-card {
+  padding-left: 30px;
+  align-items: center;
+  h2 {
+    font-weight: bold;
+  }
+  .info {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    li {
+      img {
+        width: 255px;
+        height: 164px;
+        object-fit: cover;
+      }
+      margin-right: 16px;
+      margin-bottom: 104px;
+      .prod-info {
+        text-transform: uppercase;
+        justify-content: space-between;
+        font-size: 24px;
+        .prod-price {
+          font-weight: 500;
+          color: $color-primary;
+        }
+      }
+      .prod-color {
+        margin-top: 8px;
+        .color01 {
+          width: 24px;
+          height: 24px;
+          background-color: $font-primary;
+          border-radius: 4px;
+          margin-right: 8px;
+        }
+        .color02 {
+          width: 24px;
+          height: 24px;
+          background-color: $color-primary;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-bottom: 160px;
+    display: inline-block;
+    display: flex;
+    a {
+      padding: 8px 16px;
+      border: 1px solid #000;
+      color: $font-dark;
+      &:hover {
+        background-color: #e4e4e4;
+      }
+      &.active {
+        color: $font-light;
+        background-color: #000;
+      }
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
 }
