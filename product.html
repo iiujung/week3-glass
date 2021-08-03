@@ -6,212 +6,224 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>系列鏡框</title>
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
   </head>
 
   <body>
     <header class="header d-f">
-      <h1>
+      <h1 class="logo">
         <a href="index.html">glasses</a>
       </h1>
       <ul class="nav d-f">
         <li><a href="product.html">系列鏡框</a></li>
         <li><a href="store.html">門市據點</a></li>
-        <li><a href="blog.html">部落格</a></li>
-        <li><a href="qa.html">常見問題</a></li>
+        <li><a href="ham.html">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
       </ul>
+      <!-- mobile -->
+      <div class="mobile d-none">
+        <a href="#" class="ham-icon" onclick="addClass()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <ul id="ham-btn" class="mobileNav d-col">
+          <li><a href="product.html">系列鏡框</a></li>
+          <li><a href="store.html">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
-    
-<ul class="tab d-f">
-  <li>
-    <a href="#" class="d-f active">
-      <img src="./assets/images/icon-sun-black.svg" alt="" />
-      <h2 class="fz-t2">OPTICAL</h2>
-    </a>
-  </li>
-  <li>
-    <a href="#" class="d-f">
-      <img src="./assets/images/icon-sun-black.svg" alt="" />
-      <h2 class="fz-t2">SUNGLASSES</h2>
-    </a>
-  </li>
-  <li>
-    <a href="#" class="d-f">
-      <img src="./assets/images/icon-sun-black.svg" alt="" />
-      <h2 class="fz-t2">FUNCTIONAL</h2>
-    </a>
-  </li>
-</ul>
+<div class="container">
+  <ul class="tab d-f">
+    <li>
+      <a href="#" class="d-f active">
+        <img src="./assets/images/icon-sun-black.svg" alt="" />
+        <h2 class="fz-t2">OPTICAL</h2>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="d-f">
+        <img src="./assets/images/icon-sun-black.svg" alt="" />
+        <h2 class="fz-t2">SUNGLASSES</h2>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="d-f">
+        <img src="./assets/images/icon-sun-black.svg" alt="" />
+        <h2 class="fz-t2">FUNCTIONAL</h2>
+      </a>
+    </li>
+  </ul>
+</div>
 
 <div class="prod-banner d-f mb-4">
-  <div class="frame">
-    <img src="./assets/images/banner-1.png" alt="" />
-  </div>
-  <div class="frame">
+    <div class="frame">
+      <img src="./assets/images/banner-1.png" alt="" />
+    </div>
     <img src="./assets/images/banner-2.png" alt="" />
+</div>
+
+<div class="container">
+  <div class="product-small-card d-col">
+    <div class="title text-center mb-2">
+      <h2 class="fz-t3">Celluloid Combi</h2>
+      <h3 class="fz-t2">賽璐珞鈦金屬混合鏡框</h3>
+    </div>
+    <ul class="info d-f">
+      <li>
+        <img src="./assets/images/products-2.png" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-3.png" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-4.png" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-5.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-6.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-7.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-8.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-9.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-10.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-11.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-12.jpg" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+      <li>
+        <img src="./assets/images/products-1.png" alt="" />
+        <div class="prod-info d-f">
+          <p class="prod-name">bj41600s</p>
+          <p class="prod-price">ntd3,490</p>
+        </div>
+        <div class="prod-color d-f">
+          <div class="color01"></div>
+          <div class="color02"></div>
+        </div>
+      </li>
+  
+    </ul>
+    <div class="pagination">
+      <a href="#">上一頁</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">下一頁</a>
+    </div>
   </div>
 </div>
 
-<div class="product-small-card d-col">
-  <div class="title tac mb-2">
-    <h2 class="fz-t3">Celluloid Combi</h2>
-    <h3 class="fz-t2">賽璐珞鈦金屬混合鏡框</h3>
-  </div>
-  <ul class="info d-f">
-    <li>
-      <img src="./assets/images/products-2.png" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-3.png" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-4.png" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-5.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-6.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-7.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-8.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-9.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-10.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-11.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-12.jpg" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    <li>
-      <img src="./assets/images/products-1.png" alt="" />
-      <div class="prod-info d-f">
-        <p class="prod-name">bj41600s</p>
-        <p class="prod-price">ntd3,490</p>
-      </div>
-      <div class="prod-color d-f">
-        <div class="color01"></div>
-        <div class="color02"></div>
-      </div>
-    </li>
-    
-  </ul>
-  <div class="pagination">
-    <a href="#">上一頁</a>
-    <a href="#" class="active">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">下一頁</a>
-  </div>
-</div>
 
-
-
-    </main>
-
+</main>
 
     <footer class="footer">
       <div class="container">
-        <div class="link-grp d-f">
+        <div class="link-grp d-f mb-2">
           <ul class="nav d-f">
             <li><a href="index.html">首頁</a></li>
             <li><a href="product.html">系列鏡框</a></li>
@@ -229,22 +241,16 @@
             <li><img src="./assets/images/icon-line.svg" alt="" /></li>
           </ul>
         </div>
-        <div class="contact mb-3">
-          <ul>
-            <li class="fz-t2">
-              <img src="./assets/images/icon-phone.svg" alt="" /><a
-                href="tel:0800-000-000"
-                >0800-000-000</a
-              >
-            </li>
-            <li class="fz-t2">
-              <img src="./assets/images/icon-mail.svg" alt="" /><a
-                href="mailto:glasses@business.com"
-                >glasses@business.com</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="contact mb-3">
+          <li class="fz-t2 d-f">
+            <img src="./assets/images/icon-phone.svg" alt="" />
+            <a href="tel:0800-000-000">0800-000-000 </a>
+          </li>
+          <li class="fz-t2 d-f">
+            <img src="./assets/images/icon-mail.svg" alt="" />
+            <a href="mailto:glasses@business.com">glasses@business.com </a>
+          </li>
+        </ul>
         <ul class="copyright d-f">
           <li>Copyright © 2020 Glasses.All rights reserved.</li>
           <li class="d-f">
@@ -256,5 +262,6 @@
     </footer>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    
   </body>
 </html>
