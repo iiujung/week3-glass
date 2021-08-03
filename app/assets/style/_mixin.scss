@@ -1,0 +1,122 @@
+//rwd
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+//
+
+@mixin nav-hover {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: width 0.5s;
+}
+
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hide-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// rwd
+
+.container {
+  @include pad {
+    max-width: 690px;
+    padding: 0 10px;
+  }
+  @include mobile {
+    max-width: 345px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include pad {
+    line-height: 1.1;
+  }
+  @include mobile {
+    line-height: 1.05;
+  }
+}
+
+.fz {
+  &-b1 {
+    font-size: 12px;
+    @include pad {
+      font-size: 14px;
+    }
+  }
+  &-b2 {
+    font-size: 14px;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  &-b3 {
+    font-size: 18px;
+    @include pad {
+      font-size: 16px;
+    }
+  }
+  &-t1 {
+    font-size: 28px;
+    @include pad {
+      font-size: 24px;
+    }
+  }
+  &-t2 {
+    font-size: 36px;
+    @include pad {
+      font-size: 26px;
+    }
+  }
+  &-t3 {
+    font-size: 40px;
+  }
+  &-h1 {
+    font-size: 48px;
+    @include pad {
+      font-size: 36px;
+    }
+  }
+  &-h2 {
+    font-size: 64px;
+    @include pad {
+      font-size: 48px;
+    }
+  }
+  &-h3 {
+    font-size: 72px;
+    @include pad {
+      font-size: 54px;
+    }
+  }
+}

@@ -1,0 +1,323 @@
+// footer header
+.header {
+  padding: 0 88px;
+  background-color: $color-primary;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .logo a {
+    background: url("../images/logo.png") center center no-repeat;
+    display: block;
+    width: 80px;
+    height: 50px;
+    @include flex-center;
+    @include hide-text;
+  }
+  .nav a {
+    padding: 35px 30px;
+  }
+  @include pad {
+    padding: 0 32px;
+    .logo a {
+      width: 55px;
+      background-size: contain;
+    }
+    .nav a {
+      font-size: 16px;
+      padding: 10px 8px;
+    }
+  }
+  @include mobile {
+    padding: 0 10px;
+    .nav a {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+
+      .mobileNav {
+        position: absolute;
+        // 使其貼齊左上方
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        z-index: 100;
+        max-height: 0;
+        &.active {
+          max-height: 200px;
+        }
+        li {
+          width: 100%;
+          padding: 10px 0;
+          border-top: 1px solid $font-light;
+          text-align: center;
+          background-color: $color-primary;
+          &:hover {
+            background-color: darken($color-primary, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $color-primary;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  .link-grp {
+    justify-content: space-between;
+    align-items: center;
+    .nav a {
+      padding-right: 24px;
+    }
+  }
+  .contact li {
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+    img {
+      width: 44px;
+      margin-right: 16px;
+    }
+  }
+
+  .copyright {
+    color: $font-light;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid #fff;
+  }
+  @include pad {
+    font-size: 14px;
+    .link-grp .nav a {
+      padding-right: 10px;
+    }
+    .contact li {
+      img {
+        width: 28px;
+      }
+      a {
+        font-size: 26px;
+      }
+    }
+    .copyright {
+      padding-top: 24px;
+    }
+  }
+}
+
+//
+
+.banner {
+  height: 840px;
+  background: url("../images/banner.png") center center no-repeat;
+  background-size: cover;
+  color: $font-primary;
+  .banner-title {
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+.philosophy {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: $color-secondary;
+  color: $font-primary;
+  .info-card {
+    justify-content: space-around;
+    align-items: baseline;
+    @include pad {
+      flex-wrap: wrap;
+      row-gap: 24px;
+    }
+    li {
+      align-items: center;
+      max-width: 240px;
+      p {
+        color: $font-dark;
+        text-align: start;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+.classic {
+  .product-grp li {
+    color: $color-primary;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 80%;
+
+    img {
+      width: 65%;
+      margin-right: 24px;
+      margin-left: 24px;
+    }
+    .title-grp {
+      align-items: center;
+      h3 {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+  }
+  @include pad {
+    .product-grp li {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8px;
+      img {
+        margin-right: 8px;
+        margin-left: 0;
+      }
+      .title-grp {
+        .icon {
+          height: 32px;
+          width: 32px;
+          margin-right: 5px;
+        }
+        h3 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  @include mobile {
+    .product-grp {
+      width: 100%;
+      li {
+        position: relative;
+        justify-content: center;
+        .title-grp {
+          @include position-center;
+        }
+      }
+    }
+  }
+}
+
+.product-grp li:nth-child(1) .icon {
+  width: 44px;
+  height: 44px;
+  background: url("../images/icon-diamond.svg") center center no-repeat;
+  background-size: contain;
+}
+.product-grp li:nth-child(2) .icon {
+  width: 44px;
+  height: 44px;
+  background: url("../images/icon-sun.svg") center center no-repeat;
+  background-size: contain;
+}
+.product-grp li:nth-child(3) .icon {
+  width: 44px;
+  height: 44px;
+  background: url("../images/icon-thunder.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.coBranding {
+  background: url("../images/bg.png") center center no-repeat;
+  height: auto;
+  background-size: cover;
+  .product-card {
+    justify-content: space-between;
+    li {
+      position: relative;
+      width: 48%;
+      h3 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.5);
+        display: flex;
+        @include flex-center;
+        &:hover {
+          background: rgba(255, 255, 255, 0.9);
+          transition: 0.5s ease-in;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.comand-card {
+  justify-content: space-around;
+  li {
+    width: 22%;
+    border-radius: 4px;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+    p {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  .content {
+    padding-bottom: 64px;
+    img {
+      border-radius: 4px 4px 0 0;
+    }
+    p {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+  @include pad {
+    flex-wrap: wrap;
+    .content {
+      padding-bottom: 32px;
+    }
+    li {
+      width: 44%;
+      box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.contactUs {
+  background-color: $color-secondary;
+  .contact-text {
+    margin: 0 auto;
+    width: 80%;
+
+    .contact-form {
+      .label-grp {
+        margin-bottom: 20px;
+        label {
+          margin-bottom: 8px;
+        }
+        input {
+          height: 50px;
+          background-color: $color-secondary;
+          border-color: $font-dark;
+        }
+        textarea {
+          background-color: $color-secondary;
+          border-width: 2px;
+          border-color: $font-dark;
+        }
+      }
+      .submit-btn {
+        margin-top: 32px;
+        align-self: center;
+      }
+    }
+  }
+  @include pad {
+    padding-top: 24px;
+  }
+}

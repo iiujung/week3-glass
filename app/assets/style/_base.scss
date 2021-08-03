@@ -12,28 +12,52 @@ $font-light: #ffffff;
 $font-dark: #000000;
 $hightlight: #c4b15e;
 
+.titleRed {
+  font-weight: bold;
+  color: $font-primary;
+}
+
+.titleWhite {
+  font-weight: bold;
+  color: $font-light;
+}
+
+.titleBlack {
+  font-weight: bold;
+  color: $font-dark;
+}
+
 .container {
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  max-width: 1110px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
 
+h-100 {
+  height: 100%;
+}
+
 a {
+  color: $font-light;
   display: inline-block;
   text-decoration: none;
+  &:hover {
+    color: $hightlight;
+  }
 }
 
 .d-block {
   display: block;
 }
 
+.d-none {
+  display: none;
+}
 img {
+  display: block; /* 去除圖片底下的2-3px空白 */
+  // vertical-align: middle;  /* 去除圖片底下的2-3px空白 */
   max-width: 100%;
   height: auto;
-  // object-fit: cover;
 }
 
 .order {
@@ -55,7 +79,7 @@ img {
   font-size: 16px;
   cursor: pointer;
   // border-radius: 30px;
-  min-width: 350px;
+  min-width: 44px;
 }
 
 .btn-black {
@@ -78,6 +102,15 @@ body {
   font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
 .d-f {
   display: flex;
   // flex-direction: row; 為預設
@@ -88,21 +121,15 @@ body {
   flex-direction: column;
 }
 
-.flex-c {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fxdrr {
+.row-reverse {
   flex-direction: row-reverse;
 }
 
-// b=body st=subtitle t=title h=heading
-.tac {
+.text-center {
   text-align: center;
 }
 
+// b=body st=subtitle t=title h=heading
 .fz {
   &-b1 {
     font-size: 12px;
