@@ -1,0 +1,45 @@
+.footer {
+  background-color: $color-primary;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  .link-grp {
+    justify-content: space-between;
+    align-items: center;
+    .nav a {
+      padding-right: 24px;
+    }
+  }
+  .contact li {
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+    img {
+      width: 44px;
+      margin-right: 16px;
+    }
+  }
+
+  .copyright {
+    color: $font-light;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid #fff;
+  }
+  @include pad {
+    font-size: 14px;
+    .link-grp .nav a {
+      padding-right: 10px;
+    }
+    .contact li {
+      img {
+        width: 28px;
+      }
+      a {
+        font-size: 26px;
+      }
+    }
+    .copyright {
+      padding-top: 24px;
+    }
+  }
+}

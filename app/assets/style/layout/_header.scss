@@ -1,0 +1,63 @@
+.header {
+  padding: 0 88px;
+  background-color: $color-primary;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .logo a {
+    background: url("../images/logo.png") center center no-repeat;
+    display: block;
+    width: 80px;
+    height: 50px;
+    @include flex-center;
+    @include hide-text;
+  }
+  .nav a {
+    padding: 35px 30px;
+  }
+  @include pad {
+    padding: 0 32px;
+    .logo a {
+      width: 55px;
+      background-size: contain;
+    }
+    .nav a {
+      font-size: 16px;
+      padding: 10px 8px;
+    }
+  }
+  @include mobile {
+    padding: 0 10px;
+    .nav a {
+      display: none;
+    }
+    .mobile {
+      display: flex;
+
+      .mobileNav {
+        position: absolute;
+        // 使其貼齊左上方
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        z-index: 100;
+        max-height: 0;
+        &.active {
+          max-height: 200px;
+        }
+        li {
+          width: 100%;
+          padding: 10px 0;
+          border-top: 1px solid $font-light;
+          text-align: center;
+          background-color: $color-primary;
+          &:hover {
+            background-color: darken($color-primary, 5%);
+          }
+        }
+      }
+    }
+  }
+}

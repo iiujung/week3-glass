@@ -2,7 +2,9 @@
 @import "base.scss";
 @import "mixin.scss";
 
-@import "index.scss";
-@import "product.scss";
-@import "store.scss";
-@import "ham.scss";
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
+@import "pages/_index.scss";
+@import "pages/_product.scss";
+@import "pages/_store.scss";

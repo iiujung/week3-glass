@@ -1,25 +1,36 @@
 .tab {
-  max-width: 100%;
   justify-content: center;
-  a {
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-bottom: 8px solid #fff;
-    color: $font-dark;
-    padding: 25px 64px;
-    justify-content: center;
-    align-items: center;
-    &:hover {
-      background-color: #e4e4e4;
-      border-bottom: 8px solid $color-primary;
+  li {
+    a {
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee;
+      border-bottom: 8px solid #fff;
+      color: $font-dark;
+      padding: 25px 64px;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #e4e4e4;
+        border-bottom: 8px solid $color-primary;
+      }
+      &:active {
+        border-bottom: 8px solid $color-primary;
+      }
+      img {
+        width: 44px;
+        height: 44px;
+        margin-right: 8px;
+      }
     }
-    &:active {
-      border-bottom: 8px solid $color-primary;
+  }
+  @include pad {
+    li {
+      width: 230px;
     }
-    img {
-      width: 44px;
-      height: 44px;
-      margin-right: 8px;
+  }
+  @include mobile {
+    li {
+      width: 150px;
     }
   }
 }
@@ -28,30 +39,23 @@
   border-bottom: 8px solid $color-primary;
 }
 
-// 圖片右邊的空白怎麼解決
-
-.prod-banner {
-  height: 304px;
+.prod-banner .frame {
   .frame {
-    max-width: 50%;
-    img {
-      object-fit: cover;
-    }
+    width: 50%;
   }
 }
 
-// 小商品卡中li最後的mr30 怎麼取消
-
 .product-small-card {
-  padding-left: 30px;
+  padding: 80px 0 96px 0;
   align-items: center;
   h2 {
     font-weight: bold;
   }
   .info {
-    max-width: 1200px;
+    justify-content: space-around;
     flex-wrap: wrap;
     li {
+      width: calc(25% - 30px);
       img {
         width: 255px;
         height: 164px;
@@ -63,9 +67,16 @@
         text-transform: uppercase;
         justify-content: space-between;
         font-size: 24px;
+
         .prod-price {
           font-weight: 500;
           color: $color-primary;
+        }
+        @include pad {
+          font-size: 18px;
+        }
+        @include mobile {
+          font-size: 16px;
         }
       }
       .prod-color {
